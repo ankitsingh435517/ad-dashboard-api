@@ -8,6 +8,14 @@ const campaignSchema = new Schema(
       type: String,
       default: "Mukund cake shop",
     },
+    status: {
+      type: String,
+      default: 'Live now'
+    },
+    clicks: {
+      type: Number,
+      default: 0
+    },
     campaignType: {
       type: String,
       required: true,
@@ -28,12 +36,8 @@ const campaignSchema = new Schema(
       type: String,
       required: true,
     },
-    platform: {
-      type: String,
-      required: true,
-    },
-    photo: {
-      type: String,
+    budget: {
+      type: Number,
       required: true,
     },
   },
